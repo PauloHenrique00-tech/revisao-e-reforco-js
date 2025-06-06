@@ -55,3 +55,20 @@ resultado = exercicio1(40, 30);
 
 console.log(`Resultado: ${resultado} `); 
 // console.log(resultado); -- outra maneira de fazer
+
+separador();
+
+/* Sintaxe moderna, função fleha/seta (arrow function)
+Nesta sintaxe, a ordem de declaração IMPORTA. */
+const exemplo3 = () => {
+    console.log("Arrow Function");
+};
+
+exemplo3(); // Chamada deve ser feita após a declaração
+
+const saudacao = (nome) => {
+    console.log("Olá "+nome);
+};
+saudacao("João Pedro");
+saudacao("Alana");
+saudacao("Gabriel");
