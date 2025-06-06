@@ -42,3 +42,16 @@ e retorne como resultado calculado. */
 e guardando os resultados em variáveis de escopo global. */
 
 /* 3) Apresente os resultados no console. */
+
+let resultado;
+
+function exercicio1(valor1, valor2) {
+   let resultado = valor1 - valor2;
+   return resultado;
+}
+
+resultado = exercicio1(40, 30);
+// let resultado = exercicio1(40, 30); -- outra maneira de fazer
+
+console.log(`Resultado: ${resultado} `); 
+// console.log(resultado); -- outra maneira de fazer
