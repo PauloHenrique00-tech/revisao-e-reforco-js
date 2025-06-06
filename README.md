@@ -5,4 +5,4 @@
 - `var`: escopo GLOBAL
 - `let`: escopo BLOCO, podendo ser GLOBAL dependendo de onde declarada
 - `const`: escopo BLOCO, podendo ser GLOBAL dependendo de onde declarada. Obs.:
-**obrigatório** inicialiar com algum valor.
+**obrigatório** inicializar com algum valor.
