@@ -3,7 +3,7 @@
 
 let nome = "Chapolin";
 let sobrenome = "Colorado";
-let idade = 30;
+let idade = 20;
 let cidade = "São Paulo";
 let estado = "SP";
 
@@ -24,3 +24,6 @@ console.log(mensagem1);
 
 
 // TEMPLATE STRINGS/LITERAL
+let mensagem2 = `Meu nome é ${nome} ${sobrenome}, tenho ${idade} anos e moro em ${cidade}/${estado}. Sou ${idade>=18 ? 'maior' : 'menor'} de idade.`;
+
+console.log(mensagem2);
