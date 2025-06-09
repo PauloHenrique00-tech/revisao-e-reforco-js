@@ -11,3 +11,11 @@ saudacao("Fulano de Tal");
 console.log(clientes);
 
 separador();
+
+console.log(alunos[1]);
+console.log(alunos);
+
+for(const aluno of alunos){
+    console.log(aluno);
+    
+}
