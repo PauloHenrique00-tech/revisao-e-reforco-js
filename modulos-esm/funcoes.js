@@ -13,4 +13,4 @@ console.log(nomeMinusculo("afonso"));
 const valorFormatado = (valor) => {
     return valor = valor.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL'});
 }
-console.log(valorFormatado(1200));
+console.log(valorFormatado(1600));
