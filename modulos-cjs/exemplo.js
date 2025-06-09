@@ -7,4 +7,4 @@ function minhaFuncao(){
 const clientes = ['Jon Oliva', 'David Gilmour', 'Floor Jansen'];
 
 /* CJS: CommonJs */
-MediaSourceHandle.exports = { minhaFuncao, clientes };
+module.exports = { minhaFuncao, clientes };
