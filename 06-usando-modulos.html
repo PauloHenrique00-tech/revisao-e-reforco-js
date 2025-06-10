@@ -9,6 +9,32 @@
     <h1>Acessando módulos</h1>
     <hr>
     <ul id="lista-alunos"></ul>
-    
+
+    <script type="module">
+        import { alunos } from "./modulos-esm/dados.js";
+        console.log(alunos);
+        
+        const lista = document.querySelector("ul");
+        console.log(lista);
+        
+        
+
+        for(const aluno of alunos) {
+            console.log(aluno);
+        }
+        
+        /* Exercício de revisão
+        Programe aqui as instruções necessárias para fazer com que 
+        os dados do array alunos, sejam inseridos como itens (tag <li>)
+        dentro da lista não-ordenada chamada lista-alunos.  
+        
+        Dicas: 
+            - Use seleção de elemento no DOM
+            - Use loop para percorrer os elementos do array
+            - Crie a tag li dinamicamente com o JS
+            - Adicione o conteúdo do array dentro da tag li criada
+        */
+
+    </script>
 </body>
 </html>
