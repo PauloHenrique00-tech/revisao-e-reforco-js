@@ -1,4 +1,4 @@
-'use-strict'
+"use-strict";
 // 08-operador-spread.js
 
 import { classificar } from "./modulos-esm/funcoes.js";
@@ -19,6 +19,23 @@ console.log(maisBandas);
 separador();
 
 // Spread para "espalhar" parâmetros para uma função
-console.log( classificar(...maisBandas) );
+console.log(classificar(...maisBandas));
 
 separador();
+
+// Spread em objetos
+const cliente = {
+  nome: "Ozzy",
+  cidade: "Belo Horizonte",
+  idade: 77,
+};
+
+const compra = {
+  ...cliente, // copiando as propriedades de cliente para compra
+  codigoPedido: "123xyz",
+  produtos: ["Morcego", "Pomba", "Microfone"],
+  total: 2589.66,
+  nome: "Chapolin", // sobreescrevendo uma propriedade que veio com spread
+};
+
+console.log(compra);
