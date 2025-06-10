@@ -1,5 +1,7 @@
 'use strict'
 
+import { classificar } from "./modulos-esm/funcoes.js";
+
 // 07-operador-rest.js
 /* Sobre o operador rest...
 Usamos o rest para mesclar uma relação de parâmtros/argumentos 
@@ -23,3 +25,14 @@ let resultado2 = somar(10,20,50);
  
 console.log(resultado1);
 console.log(resultado2);
+
+console.log("-------------");
+
+console.log( classificar("Goiaba", "Amora", "Banana", "Abacate"));
+console.log( 
+    classificar(
+        "Grand Blue", "One Piece", "Chainsaw Man", "Tower of God", "Re:Zero"
+    )
+);
+
+
