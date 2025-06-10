@@ -17,12 +17,19 @@
         const lista = document.querySelector("ul");
         console.log(lista);
         
-        
-
         for(const aluno of alunos) {
-            console.log(aluno);
+            // Criando um elemento <li>
+            let item = document.createElement("li");
+
+            item.innerHTML = aluno;
+
+            //console.log(item);
+            
+                lista.appendChild(item);
         }
-        
+
+       
+
         /* Exercício de revisão
         Programe aqui as instruções necessárias para fazer com que 
         os dados do array alunos, sejam inseridos como itens (tag <li>)
@@ -33,6 +40,7 @@
             - Use loop para percorrer os elementos do array
             - Crie a tag li dinamicamente com o JS
             - Adicione o conteúdo do array dentro da tag li criada
+            - Adicionar a tag li já com o conteúdo dentro da lista
         */
 
     </script>
