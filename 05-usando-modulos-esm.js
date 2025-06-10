@@ -10,7 +10,15 @@ import { saudacao, clientes, separador } from "./modulos-esm/exemplos.js";
 // Uso de um 'alias/apelido' para evitar conflito de nomes
 import { pessoa, livro, alunos as personagens } from "./modulos-esm/dados.js";
 
-import { nome } from "./modulos-esm/funcoes.js";
+// import { nome } from "./modulos-esm/funcoes.js";
+
+/* import {  
+    nomeMaiusculo,
+    nomeMinusculo,
+    valorFormatado
+} from "./modulos-esm/funcoes.js"; */
+
+import * as recursos from "./modulos-esm/funcoes.js";
 
 saudacao("Fulano de Tal");
 console.log(clientes);
@@ -42,3 +50,6 @@ separador();
 3) Exporte-as como módulos
 4) No arquivo 05, importe e utilize estas funções passando textos e valores para testes. */
 
+console.log(recursos.nomeMaiusculo("nome"));
+console.log(recursos.nomeMinusculo("nome"));
+console.log(recursos.valorFormatado(1000));

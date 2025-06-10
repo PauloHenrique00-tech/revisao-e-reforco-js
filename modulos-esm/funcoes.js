@@ -1,16 +1,17 @@
 'use strict'
 
-const nomeMaiusculo = (nome) => {
+export const nomeMaiusculo = (nome) => {
     return nome.toUpperCase();
 }
-console.log(nomeMaiusculo("nome"));
 
-const nomeMinusculo = (nome) => {
+
+export const nomeMinusculo = (nome) => {
     return nome.toLowerCase();
 }
-console.log(nomeMinusculo("afonso"));
 
-const valorFormatado = (valor) => {
+
+export const valorFormatado = (valor) => {
     return valor = valor.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL'});
 }
-console.log(valorFormatado(1600));
+
+
