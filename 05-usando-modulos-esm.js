@@ -53,3 +53,5 @@ separador();
 console.log(recursos.nomeMaiusculo("nome"));
 console.log(recursos.nomeMinusculo("nome"));
 console.log(recursos.valorFormatado(1000));
+console.log(recursos.valorFormatado(2000, 'USD', 'en'));
+console.log(recursos.valorFormatado(3000, 'EUR', 'fr'));
