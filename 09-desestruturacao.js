@@ -74,3 +74,20 @@ console.log(monitor);
 console.log(mouse);
 console.log(diverso3);
 console.log(diverso4("paulo"));
+
+separador();
+
+const guloseimas = [
+  "brigadeiro",
+  "brownie",
+  "torta de limão",
+  "coxinha",
+  "pastel",
+  "pizza",
+  "esfiha",
+];
+
+// Desestruturação com operador rest
+const [brigadeiro, brownie, torta, ...salgados] = guloseimas;
+console.log(brigadeiro);
+console.log(salgados); // virou um array
