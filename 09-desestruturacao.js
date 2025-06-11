@@ -27,3 +27,20 @@ const [paraiba, amazonas, , bahia] = capitais;
 console.log(paraiba);
 console.log(amazonas);
 console.log(bahia);
+
+separador();
+
+const linguagens = [
+  ["HTML", "CSS", "JS"],
+  ["PHP", "Node.js", "SQL", "Phyton", "ASP.Net"],
+];
+
+console.log(linguagens);
+
+//console.log(linguagens[0][2]); // JS
+//console.log(linguagens[1][3]); // Phyton
+
+const [frontEnd, backEnd] = linguagens;
+
+console.log(frontEnd[2]); //JS
+console.log(backEnd[3]); //Python
