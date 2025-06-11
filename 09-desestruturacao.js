@@ -51,3 +51,26 @@ separador();
 const [[html, css, js], [php, node, sql, python, asp]] = linguagens;
 console.log(js);
 console.log(python);
+
+separador();
+
+/* Mini-exercício */
+const diversos = [
+  "JavaScript - Reforço",
+  ["Teclado", "Monitor", "Mouse"],
+  2112,
+  (texto) => texto.toUpperCase(),
+];
+
+// Faça a desestruturação dos elementos deste array
+// Teste usando o console.log para exibir cada elemento extraído
+// Posso até deixar o segundo elemento do array como [teclado, monitor, mouse], mas é necessário
+// fazer um comando específico para exibir esses elementos, no caso "console.log(nome da variável)"
+const [diverso1, [teclado, monitor, mouse], diverso3, diverso4] = diversos;
+
+console.log(diverso1);
+console.log(teclado);
+console.log(monitor);
+console.log(mouse);
+console.log(diverso3);
+console.log(diverso4("paulo"));
