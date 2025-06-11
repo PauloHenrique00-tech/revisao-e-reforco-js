@@ -39,3 +39,5 @@ const compra = {
 };
 
 console.log(compra);
+
+console.log(`o cliente fez uma ${compra}`);
