@@ -91,3 +91,24 @@ const guloseimas = [
 const [brigadeiro, brownie, torta, ...salgados] = guloseimas;
 console.log(brigadeiro);
 console.log(salgados); // virou um array
+
+separador();
+
+/* Desestruturando objetos */
+const musico = {
+  nome: "David Gilmour",
+  instrumento: "Guitarra",
+  idade: 77,
+  banda: "Pink Floyd",
+};
+
+// Acessando propriedade através do objeto (sem desestruturação)
+//console.log(musico.nome);
+//console.log(musico.idade);
+
+// Com desestruturação
+const { nome, instrumento, idade, banda } = musico;
+console.log(nome);
+console.log(instrumento);
+console.log(idade);
+console.log(banda);
