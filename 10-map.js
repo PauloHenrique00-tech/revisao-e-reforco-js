@@ -62,3 +62,27 @@ console.log(precos);
 
 const precosNovos = cursos.map((curso) => curso.preco - curso.preco * 0.1);
 console.log(precosNovos);
+
+// Exemplo 03: gerar um novo array COMPLETO (ou seja, com os objetos completos) mas com os preços atualizados com o desconto
+const cursosComDesconto = cursos.map((curso) => {
+  return {
+    ...curso, // spred das propriedades do curso (copiando-as pra cá)
+    preco: curso.preco - curso.preco * 0.1, // mas o preço é atualizado
+  };
+});
+
+console.log(cursosComDesconto);
+
+separador();
+
+/* Exercícios 
+Gere uma nova de lista de cursos contendo apenas os títulos e as categorias */
+
+const cursosAtualizados = cursos.map((curso) => {
+  return {
+    titulo: curso.titulo,
+    categoria: curso.categoria,
+  };
+});
+
+console.log(cursosAtualizados);
