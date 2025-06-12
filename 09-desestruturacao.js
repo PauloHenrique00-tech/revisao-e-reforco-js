@@ -186,8 +186,8 @@ processarPedido(pedidoB);
 
 separador();
 
-const exibirDados = (filme) => {
-  console.log(`Filme: ${filme.titulo} - Ano: ${filme.ano} \n`);
+const exibirDados = ({ titulo, ano = "desconhecido" }) => {
+  console.log(`Filme: ${titulo} - Ano: ${ano} \n`);
 };
 
 const filme1 = {
@@ -197,7 +197,6 @@ const filme1 = {
 
 const filme2 = {
   titulo: "O Senhor dos Anéis",
-  ano: 2001,
 };
 
 exibirDados(filme1);
