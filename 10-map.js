@@ -1,6 +1,7 @@
 "use strict";
 
 import { separador } from "./modulos-esm/exemplos.js";
+import cursos from "./modulos-esm/cursos.js";
 
 // 10-map.js
 
@@ -37,3 +38,15 @@ console.log(textos);
 
 const novosTextos = textos.map((texto) => texto.toLowerCase());
 console.log(novosTextos);
+
+separador();
+
+console.log("== Lista Completa de Cursos ==");
+console.log(cursos);
+console.log("=======================");
+
+separador();
+
+// Exemplo 2: gerar um novo array contendo somente os títulos dos cursos
+const titulos = cursos.map((curso) => curso.titulo);
+console.log(titulos);
