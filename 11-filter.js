@@ -12,9 +12,7 @@ retornar valores de acordo com uma ou mais condições, gerando um novo array. *
 const vendas = [1500, 3000, 500, 1000, 750, 5000, 100];
 const META = 1000;
 
-const vendasQueBateramMeta = vendas.filter((venda) => {
-  return venda >= META;
-});
+const vendasQueBateramMeta = vendas.filter((venda) => venda >= META);
 
 console.log(vendasQueBateramMeta);
 
@@ -26,3 +24,30 @@ console.log(vendasQueBateramMeta);
 // }
 // }
 // console.log(bateramMeta);
+
+separador();
+
+// Exemplo 2: filtrar serviços pendentes
+const servicos = [
+  { codigo: 1, tipo: "Limpeza", status: "Concluído" },
+  { codigo: 2, tipo: "Manutenção", status: "Pendente" },
+  { codigo: 3, tipo: "Reparo", status: "Pendente" },
+  { codigo: 4, tipo: "Consultoria", status: "Concluído" },
+  { codigo: 5, tipo: "Instalação", status: "Concluído" },
+];
+
+/* Faça o exercício! */
+
+//const servicosPendentes = servicos.filter(
+//(servico) => servico.status == "Pendente"
+//);
+
+//console.log(servicosPendentes);
+
+/* Desestruturação */
+
+const servicosAtualizado = servicos.filter(
+  ({ status }) => status === "Pendente"
+);
+
+console.log(servicosAtualizado);
