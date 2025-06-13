@@ -51,3 +51,45 @@ const servicosAtualizado = servicos.filter(
 );
 
 console.log(servicosAtualizado);
+
+// Exemplo 3
+const cursosDesign = cursos.filter((curso) => {
+  return curso.categoria === "Design";
+});
+
+console.log(cursosDesign);
+
+separador();
+
+// Exemplo 4
+const cursosExcetoDesign = cursos.filter(
+  (curso) => curso.categoria !== "Design"
+);
+
+console.log(cursosExcetoDesign);
+
+separador();
+
+/* Exercício
+Gere um novo array com os cursos que atendam os seguintes critérios:
+- Categoria Front-End ou Mobile
+- Preços acima de 600 */
+
+//const cursosExcetoBack = cursos.filter((curso) => {
+//return (
+//curso.categoria === "Mobile" ||
+//(curso.categoria === "Front-End" && curso.preco > 600)
+//);
+//});
+
+//console.log(cursosExcetoBack);
+
+// Refatorado
+const cursosExcetoB = cursos.filter(
+  (curso) =>
+    curso.categoria === "Mobile" ||
+    (curso.categoria === "Front-End" && curso.preco > 600)
+);
+console.log("---");
+
+console.log(cursosExcetoB);
