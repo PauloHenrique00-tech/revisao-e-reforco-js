@@ -49,8 +49,10 @@ const frontEnd = cursos.filter(
   (curso, categoria) => curso.categoria === "Front-End"
 );
 cursos.reduce((acumulador, curso) => {
-  return acumulador + curso.preco / 4;
+  return acumulador + curso.preco;
 }, 0);
+
+console.log(frontEnd);
 
 const somaDosPrecosFront = cursos
   .filter(({ categoria }) => categoria === "Front-End")
