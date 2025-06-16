@@ -12,9 +12,14 @@ A função callback recebe os dois parâmetros: o acumulador (valor que é acumu
 o momento), e o valor atual (elemento do array sendo processado). */
 
 // Exemplo 1
-const valores = [10, 5, 50, 200, 1000];
+/* const valores = [10, 5, 50, 200, 1000];
 const total = valores.reduce((acumulador, valor) => {
   return acumulador + valor;
-}, 0);
+}, 0); */
+
+//console.log(total);
+
+const valores = [10, 5, 50, 200, 1000];
+const total = valores.reduce((acumulador, valor) => acumulador + valor, 0);
 
 console.log(total);
