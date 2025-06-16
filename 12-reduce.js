@@ -23,3 +23,37 @@ const valores = [10, 5, 50, 200, 1000];
 const total = valores.reduce((acumulador, valor) => acumulador + valor, 0);
 
 console.log(total);
+
+// Exercício 1: realize a soma dos preços de todos os cursos
+// Mostre no log.
+
+// Exercício 2: calcule a média dos preços de todos os cursos
+// Mostre no log.
+
+// Exercício 3: calcule o preço total dos cursos de Front-End
+// Mostre no log.
+
+const resultado = cursos.reduce((acumulador, curso) => {
+  return acumulador + curso.preco;
+}, 0);
+
+console.log(resultado);
+
+const mediaPrecos = cursos.reduce((acumulador, curso) => {
+  return acumulador + curso.preco / 15;
+}, 0);
+
+console.log(mediaPrecos);
+
+const frontEnd = cursos.filter(
+  (curso, categoria) => curso.categoria === "Front-End"
+);
+cursos.reduce((acumulador, curso) => {
+  return acumulador + curso.preco / 4;
+}, 0);
+
+const somaDosPrecosFront = cursos
+  .filter(({ categoria }) => categoria === "Front-End")
+  .reduce((acumulador, { preco }) => acumulador + preco, 0);
+
+console.log("Soma dos preços dos cursos de Front: " + somaDosPrecosFront);
